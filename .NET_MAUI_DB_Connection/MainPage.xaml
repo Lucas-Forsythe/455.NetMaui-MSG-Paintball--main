@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="msg_MAUI2.MainPage">
+
+    <ScrollView
+        BackgroundColor="Black">
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                x:Name="LogoImage"
+                Source="Logo2.gif" IsAnimationPlaying="True"
+                HeightRequest="100"
+                HorizontalOptions="Start"
+                Aspect="AspectFit" />
+
+            <Label
+                x:Name="Hours"
+                Text="Hours" 
+                TextColor="White"
+                
+                VerticalOptions="Center"/>
+
+            <Label
+                TextColor="Red"
+                Text="MSG CUSTOMERS!!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+
+            <Button
+                BackgroundColor="Red"
+                x:Name="GetGames"
+                Text="Book a party" 
+                Clicked="GetGames_Clicked"
+                HorizontalOptions="Fill" 
+                WidthRequest="350"/>
+
+            <Label
+                x:Name="GameResults"
+                Text="The database results will show up here"
+                TextColor="White"/>
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+
+</ContentPage>

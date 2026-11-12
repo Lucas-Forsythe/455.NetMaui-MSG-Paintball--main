@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDevFinal.ExamPage"
+             Title="Exam Page">
+
+    <ScrollView>
+
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label Text="Online Examination"
+                   FontSize="28"
+                   HorizontalOptions="Center" />
+
+            <Label Text="1. Which statement about form inputs is correct?"/>
+            <RadioButton x:Name="Q1A"
+                         Content="Checkbox values are always sent"
+                         GroupName="Q1"/>
+            <RadioButton x:Name="Q1B"
+                         Content="Text inputs are only sent if selected"
+                         GroupName="Q1"/>
+            <RadioButton x:Name="Q1C"
+                         Content="Text inputs are always sent; checkboxes are only sent if selected"
+                         GroupName="Q1"/>
+            <RadioButton x:Name="Q1D"
+                         Content="Only password fields are sent"
+                         GroupName="Q1"/>
+ 
+            <Label Text="2. Which HTML attribute specifies the script that will process form data?"/>
+
+            <RadioButton x:Name="Q2A"
+             Content="Method"
+             GroupName="Q2"/>
+            <RadioButton x:Name="Q2B"
+             Content="Action"
+             GroupName="Q2"/>
+            <RadioButton x:Name="Q2C"
+             Content="Process"
+             GroupName="Q2"/>
+            <RadioButton x:Name="Q2D"
+             Content="Submit"
+             GroupName="Q2"/>
+
+            <Label Text="3. How do you access a global variable inside a function?"/>
+
+            <CheckBox x:Name="Q3A"/>
+            <Label Text="global $var;" />
+            <CheckBox x:Name="Q3B"/>
+            <Label Text="use $var;" />
+            <CheckBox x:Name="Q3C"/>
+            <Label Text="declare $var;" />
+            <CheckBox x:Name="Q3D"/>
+            <Label Text="$GLOBALS['var'];" />
+
+            <Label Text="4. Which of the following is NOT a valid arithmetic operator in PHP?"/>
+
+            <CheckBox x:Name="Q4A"/>
+            <Label Text="+" />
+            <CheckBox x:Name="Q4B"/>
+            <Label Text="%" />
+            <CheckBox x:Name="Q4C"/>
+            <Label Text="//" />
+            <CheckBox x:Name="Q4D"/>
+            <Label Text="**" />
+
+            <Label Text="5. Which of the following statements is true?"/>
+            <RadioButton x:Name="Q5A"
+             Content="PHP does not support ternary operators."
+             GroupName="Q5"/>
+            <RadioButton x:Name="Q5B"
+             Content="An if statement must always have an else statement."
+             GroupName="Q5"/>
+            <RadioButton x:Name="Q5C"
+             Content="The foreach loop can only be used with indexed arrays."
+             GroupName="Q5"/>
+            <RadioButton x:Name="Q5D"
+             Content="Switch statements can only check equality, not conditions."
+             GroupName="Q5"/>
+
+            <Button Text="Submit Exam"
+                    Clicked="SubmitExam"/>
+
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

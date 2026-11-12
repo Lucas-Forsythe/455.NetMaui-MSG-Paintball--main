@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDevFinal.HomePage"
+             Title="HomePage">
+    <VerticalStackLayout Padding="20">
+        <Label x:Name="WelcomeLabel" FontSize="24" />
+        <Label x:Name="StudentIdLabel" />
+        <Label x:Name="EmailLabel" />
+        <Button x:Name="ExamPage" 
+                Text ="Take Exam"  Clicked="ExamPage_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

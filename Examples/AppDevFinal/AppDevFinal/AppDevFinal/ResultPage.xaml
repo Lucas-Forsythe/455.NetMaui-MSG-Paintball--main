@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDevFinal.ResultPage"
+             Title="ResultPage">
+    <VerticalStackLayout>
+        <Label
+                Text="Exam Results"
+                FontSize="30"
+                HorizontalOptions="Center" />
+        <Label
+                x:Name="StudentIdLabel"/>
+           
+        <Label
+                x:Name="ScoreLabel"/>
+            
+        <Label
+                x:Name="CorrectLabel"/>
+                
+        <Label
+                x:Name="WrongLabel"/>
+           
+        <Label
+                x:Name="DateLabel"/>
+
+        <Label
+                x:Name="TimeLabel"/>
+
+        <Label
+                x:Name="ReviewLabel"/>
+        <Button Text="See Report"
+                Clicked="ToReport"/>
+    </VerticalStackLayout>
+</ContentPage>

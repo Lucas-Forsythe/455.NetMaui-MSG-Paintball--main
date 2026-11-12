@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="msg_MAUI2.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:msg_MAUI2"
+    Title="msg_MAUI2"
+    FlyoutBehavior="Flyout"
+    Shell.BackgroundColor="Black"
+    Shell.ForegroundColor="Black">
+    
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate local:MSG_Login}"
+        Route="MSG_Login" />
+    <FlyoutItem Title="MainPage">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+
+    
+
+</Shell>

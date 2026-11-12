@@ -1,0 +1,79 @@
+body {
+    background-color: #5C6FD1;
+    font-family: "Papyrus", "Herculanum", "Party LET", fantasy;
+    font-size: 50px;
+    margin: 30px;
+    color: #E8AC2D;
+}
+
+h1 {
+    text-align: left;
+    color: #FFE186;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #FFE186;
+}
+
+h3 {
+    color: #FFE186;
+}
+
+p {
+    padding: 12px;
+    background-color: #5C6FD1;
+    border-right: 5px solid #d35400;
+    border-left: 5px solid #d35400;
+    border-radius: 4px;
+}
+
+table {
+    width: 85%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background-color: #3C3487;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+thead {
+    background-color: #3C3487;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #484399;
+}
+
+tbody tr:hover {
+    background-color: #B76E79;
+    cursor: pointer;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: red;
+}
+
+.submit-button {
+  width: 200px;
+  height: 50px;
+}

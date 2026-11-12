@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MSG_Paintball.MSG_Booking"
+             Title="Book a Party"
+             BackgroundColor="#111111">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="18">
+
+            <Label Text="MSG PAINTBALL"
+                   FontSize="32"
+                   FontAttributes="Bold"
+                   TextColor="#D00000"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Book Your Party"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Select a Booking Time"
+                   TextColor="White"
+                   FontSize="17" />
+
+            <Picker x:Name="TimePicker"
+                    Title="Pick a time"
+                    TextColor="White"
+                    TitleColor="Gray"
+                    BackgroundColor="#292929">
+                <Picker.Items>
+                    <x:String>10:00 am</x:String>
+                    <x:String>12:00 pm</x:String>
+                    <x:String>1:00 pm</x:String>
+                    <x:String>2:00 pm</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Select Party Type"
+                   TextColor="White"
+                   FontSize="17" />
+
+            <Picker x:Name="GameTypePicker"
+                    Title="Pick a party"
+                    TextColor="White"
+                    TitleColor="Gray"
+                    BackgroundColor="#292929">
+                <Picker.Items>
+                    <x:String>Paintball Party</x:String>
+                    <x:String>Airsoft Party</x:String>
+                    <x:String>Gel Party</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Select Booking Date"
+                   TextColor="White"
+                   FontSize="17" />
+
+            <DatePicker x:Name="BookingDatePicker"
+                       
+                        TextColor="White"
+                        BackgroundColor="#292929" />
+
+            <Label Text="Select Field"
+                   TextColor="White"
+                   FontSize="17" />
+
+            <Picker x:Name="LocationPicker"
+                    Title="Pick a field"
+                    TextColor="White"
+                    TitleColor="Gray"
+                    BackgroundColor="#292929">
+                <Picker.Items>
+                    <x:String>King of the hill</x:String>
+                    <x:String>Castle</x:String>
+                    <x:String>Town</x:String>
+                    <x:String>Forest</x:String>
+                    <x:String>Sandhill</x:String>
+                    <x:String>Graveyard</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label x:Name="MessageLabel"
+                   TextColor="#FF4444"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center" />
+
+            <ActivityIndicator x:Name="LoadingIndicator"
+                               IsVisible="False"
+                               IsRunning="False"
+                               Color="#D00000" />
+
+            <Button x:Name="BookingButton"
+                    Text="Submit Booking"
+                    BackgroundColor="#D00000"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Clicked="BookingButton_Clicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
